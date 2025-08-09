@@ -1,0 +1,49 @@
+// 1. Find the Shortest Word
+// Write a function shortestWord(sentence) that takes a sentence (string) and returns the shortest word in it.
+// Rules:
+
+// If the input is undefined, null, not a string, or an empty string → return "".
+// If multiple words have the same shortest length, return the first one found.
+// Count punctuation as part of the word (no cleaning).
+
+-----------------------------------------------------------------------------------------------
+
+// 2. Count Words in a Sentence
+// Write a function wordCount(sentence) that returns the number of words in a sentence.
+// Rules:
+
+// If input is not a string or is an empty string → return 0.
+// Words are separated by spaces.
+// Multiple spaces should be treated as one separator.
+
+-----------------------------------------------------------------------------------------------
+
+// 3. Reverse Words in a Sentence
+// Write a function reverseWords(sentence) that reverses the order of words in the sentence.
+// Rules:
+
+// If input is not a string or is empty → return "".
+// Keep punctuation attached to words.
+// Only reverse the word order, not the letters in words.
+
+-----------------------------------------------------------------------------------------------
+
+// 4. Character Frequency Counter
+// Write a function charFrequency(text) that returns an object with the frequency count of each character in the string.
+// Rules:
+
+// Case-sensitive (treat uppercase and lowercase as different).
+// If input is not a string or is empty → return {}.
+// Spaces " " should also be counted as a character.
+
+-----------------------------------------------------------------------------------------------
+
+// 5. Check for Palindrome
+// Write a function isPalindrome(word) that checks whether a word is a palindrome (reads the same backward).
+// Rules:
+
+// Ignore case (case-insensitive).
+// Punctuation and spaces should be treated as normal characters (no cleaning).
+// If input is not a string or is empty → return false.
+
+-----------------------------------------------------------------------------------------------
