@@ -1,0 +1,37 @@
+1. Object Literal & Method
+สร้าง object student เก็บข้อมูลดังนี้
+id: 1001
+name: "Ann"
+subjects: ["Math", "JS", "CSS"]
+method getSubjects() คืนค่า subjects ทั้งหมดในรูปแบบ string คั่นด้วยเครื่องหมาย ,
+
+-----------------------------------------------------------------------------------------------
+
+2. Constructor Function
+เขียนฟังก์ชัน Studentt(id, name, major) ให้สร้าง object ใหม่ที่มี
+id, name, major (รับมาจาก parameter)
+method getProfile() ที่ return string เช่น "1001 - Ann (IT)"
+
+-----------------------------------------------------------------------------------------------
+
+3. Class & Setter/Getter
+เขียน class Car ที่มี property
+brand, model
+method getCarInfo() คืนค่า string "Brand: Toyota, Model: Yaris"
+method setModel(newModel) เปลี่ยนค่า model
+ทดสอบสร้าง object แล้วเปลี่ยนค่า model
+
+-----------------------------------------------------------------------------------------------
+
+4. Object.create()
+ให้มี object animal เก็บ property type: "Mammal" และ method sound() (คืนค่า "Some sound")
+จากนั้นใช้ Object.create(animal) เพื่อสร้าง dog ที่เพิ่ม property breed: "Bulldog" และเขียน method sound() ของตัวเอง (คืนค่า "Woof!")
+
+-----------------------------------------------------------------------------------------------
+
+5. Destructuring & Compare
+สร้าง object book11 และ book22 ที่มี property {isbn: 111, title: "JS"}
+เขียนฟังก์ชัน isSameBook(x, y) ถ้า isbn เท่ากัน return true ไม่งั้น false
+ใช้ destructuring เพื่อดึง isbn และ title ของ book1 มาเก็บในตัวแปร แล้วพิมพ์ออกมา
+
+-----------------------------------------------------------------------------------------------

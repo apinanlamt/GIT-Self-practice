@@ -11,7 +11,30 @@
 ข้อที่5 Check for Palindrome ให้ตรวจว่าข้อความที่รับมานั้นเป็น palindrome หรือไม่ ซึ่ง palindrome 
 คือข้อความที่อ่านจากซ้ายไปขวาหรือขวาไปซ้ายแล้วได้เหมือนกัน Ex. madam และ racecar ถ้าไม่ใช่ข้อความหรือเป็นข้อความว่าง ก็จะคืนค่าเป็น falปse
 
-ประโยชน์ที่จากการฝึก practice
+ประโยชน์ที่จากการฝึก Practice
 การฝึกโจทย์พวกนี้ช่วยฝึก logic ในการคิด และ การเขียน code และ การคิดแก้ปัญหาเป็นขั้นตอน และ ยังเป็นพื้นฐานในการต่อยอดในการไปเขียน code ที่ยากกว่านี้
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+///// Week 02 //////
+
+Homework Shallow Equality ในส่วนของ Object.keys(obj) นั้นจะคืนค่า array ของชื่อ key ใน object
+และ ถ้าจำนวน key ไม่เท่ากัน จะคืนค่า false แล้วก็ ถ้าค่าใน key ไหนไม่ตรงกัน ก็จะคืนค่า false เหมือนกัน และนอกจากนี้
+จะคืนค่าเป็น true
+
+ข้อที่ 1 Student Object ให้สร้าง object นักเรียนที่เก็บข้อมูล โดยจะเก็บข้อมูลตามนี้ 1.id 2.name 3.subjects และให้เขียน method getSubjects 
+เพื่อดึงรายวิชาออกมาเป็นข้อความ โดยจะการ join array
+ข้อที่ 2 Constructor Function ให้สร้างฟังก์ชันแบบ constructor เพื่อสร้าง object นักเรียนที่มี id, name, major และจะมี method getProfile 
+ที่คืนค่าเป็น string Ex. "1001 - Ann (IT)"
+ข้อที่ 3 Class Car ให้สร้าง class ที่มี property brand และ model และมี method getCarInfo ไว้สำหรับคืนค่าข้อมูลรถ และจะมี method setModel 
+ไว้เปลี่ยนค่า model ได้ด้วย
+ข้อที่ 4 Object.create() ให้สร้าง object animal ที่มี property type และ method sound จากนั้นจะใช้ Object.create เพื่อสร้าง object dog 
+เป็นการสืบทอดมาจาก animal และเพิ่ม property ใหม่พร้อมทั้ง override method sound ให้คืนค่าใหม่เป็น "Woof!"
+ข้อที่ 5 Compare Book & Destructuring ให้สร้าง object หนังสือ 2 เล่มที่มีค่าเหมือนกัน จากนั้นจะเขียนฟังก์ชัน isSameBook 
+เพื่อเปรียบเทียบว่า isbn เท่ากันมั้ย และใช้ destructuring ดึงค่า isbn และ title ของหนังสือออกมาด้วย
+
+ประโยชน์จากการฝึก Practice
+การฝึกโจทย์เหล่านี้ช่วยให้เข้าใจหลักการเขียน object ในหลายรูปแบบ ไม่ว่าจะเป็น object literal, constructor function, class 
+หรือการใช้ Object.create รวมถึงการใช้ destructuring และ shallow equality เพื่อตรวจสอบ object อีกด้วย
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
