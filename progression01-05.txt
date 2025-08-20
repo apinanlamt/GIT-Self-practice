@@ -38,3 +38,24 @@ Homework Shallow Equality ในส่วนของ Object.keys(obj) นั้
 หรือการใช้ Object.create รวมถึงการใช้ destructuring และ shallow equality เพื่อตรวจสอบ object อีกด้วย
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+///// Week 03 //////
+
+Homework Practice getFreqOfWords(sentence) จะตรวจสอบชนืดของข้อมูลก่อนเป็นอันดับแรกเพื่อป้องกันการเกิด error ฟังก์ชันจะคืนค่า undefined ถ้าพารามิเตอร์ไม่ใช่ string และต่อไปจะแยกคำของจากประโยค
+โดยการใช้ .split() และสร้าง Object frequency จะเก็บคู่ key-value key ก็คือ คำ และ value = จำนวนครั้งที่ปรากฏ และในส่วนของลูป จะแปลงคำเป็น lowercase เพื่อรวมคำซ้ำต่าง case เช่น "Today" และ "today" 
+และ (frequency[word] || 0) + 1 ด็คือถ้า key ยังไม่มีใน object ให้ใช้ค่า 0 และเพิ่มค่าทีละ 1
+
+ข้อ 1 Function Declaration โดยสร้างฟังก์ชัน square(num) เพื่อคืนค่ากำลังสองของตัวเลข และสร้าง ฟังก์ชัน doSomething(fn) ที่รับฟังก์ชันเป็นพารามิเตอร์ แล้วเรียกฟังก์ชันนั้นด้วยค่า 7 หรือค่าอื่นๆ
+ข้อ 2 Function Expression โดยสร้างฟังก์ชันแบบ Arrow Function ชื่อ divide รับเลข 2 ตัว และจะคืนค่าเป็นผลหาร
+ข้อ 3 High Order Function โดยสร้างฟังก์ชัน sayHello() แล้วคืนค่า "Hello World" และจะสร้างฟังก์ชัน wrapper() คืนค่า ฟังก์ชัน sayHello และ ทดสอบเรียกโดยใช้ wrapper() จะคืนค่าฟังก์ชัน sayHello 
+และ wrapper()() จะเรียกฟังก์ชันจริงโดยจะได้ Hello World ออกมา
+ข้อ 4 Object Parameter Passing โจทย์จะกำหนด object มาให้ก็คือ car = { brand: "Toyota", year: 2020 } โดยจะให้เราสร้าง ฟังก์ชัน updateCar(obj) เปลี่ยน year เป็น 2025 
+โดย Object ใน JavaScript จะส่งผ่าน reference
+ข้อ 5 Spread และ Rest Operator ในส่วนของ SpreadOperator จะส่ง array [2, 4, 6] เข้าไปในฟังก์ชัน multiply3(a, b, c) และ ฟังก์ชัน multiply จะคืนค่าผลคูณ a * b * c
+และในส่วนของ RestOperator ให้เขียนฟังก์ชัน sumAll(...nums) เพื่อรวมผลบวกของตัวเลขทั้งหมด และ ถ้าถามว่า spread กับ rest ต่างกันยังไง จำง่ายๆเลยว่า spread จะ แยกออก ส่วน rest จะรวมเข้ามา
+
+ประโยชน์จากการฝึก Practice
+การฝึกโจทย์เหล่านี้ช่วยให้ เข้าใจ Function Declaration, Arrow Function, High Order Function และเข้าใจ Object Parameter Passing และการแก้ไข property รวมถึง Spread/Rest Operator
+และ ฝึก Text Processing และ Word Frequency Analysis พัฒนาทักษะ คิดเชิง Logic และ Algorithm
+
+------------------------------------------------------------------------------------------------------------------------------------------------
