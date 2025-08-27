@@ -1,0 +1,87 @@
+ข้อ 1 Filter + Map
+
+ให้ array ของตัวเลข
+
+const numbers = [10, 23, 45, 66, 78, 91, 100];
+
+เขียนโค้ดหาตัวเลขที่เป็น คู่ (even)
+
+แล้วแปลงเลขที่ได้ให้เป็น string โดยเติม " is even" ต่อท้าย
+
+Expected output:
+
+["10 is even", "66 is even", "78 is even", "100 is even"]
+
+-----------------------------------------------------------------------------------------------
+
+ข้อ 2 Reduce
+
+ให้ array ของสินค้า
+
+const products = [
+  { id: 1, name: "Pen", price: 5, quantity: 3 },
+  { id: 2, name: "Book", price: 20, quantity: 2 },
+  { id: 3, name: "Bag", price: 100, quantity: 1 },
+];
+
+เขียนโค้ดหายอดรวม (total)
+
+ให้ผลลัพธ์ออกมาเป็น object แบบนี้
+
+{ total: 155 }
+
+-----------------------------------------------------------------------------------------------
+
+ข้อ 3 Find
+
+ให้ array ของนักเรียน
+
+const students = [
+  { id: 1, name: "Ann" },
+  { id: 2, name: "Bee" },
+  { id: 3, name: "Cat" },
+];
+
+เขียนโค้ดหานักเรียนที่มี id = 2
+
+ถ้ามีให้แสดงชื่อ, ถ้าไม่มีก็ให้แสดง "not found"
+
+Expected output:
+
+Bee
+
+-----------------------------------------------------------------------------------------------
+
+ข้อ 4 Slice + Splice
+
+ให้ array ของผลไม้
+
+const fruits = ["apple", "banana", "cherry", "mango", "orange"];
+
+ใช้ slice ตัดเอาผลไม้ตั้งแต่ index 1 ถึง 3 (ไม่เอา index 3)
+
+ใช้ splice ลบ "banana" ออก และแทนที่ด้วย "grape"
+
+Expected output:
+
+["banana", "cherry"]   // จาก slice
+["apple", "grape", "cherry", "mango", "orange"]  // หลัง splice
+
+-----------------------------------------------------------------------------------------------
+
+ข้อ 5 Map + toUpperCase + Fill
+
+ให้ array ของคำ
+
+const words = ["hello", "world", "javascript"];
+
+แปลงทุกคำให้เป็น ตัวพิมพ์ใหญ่
+
+จากนั้นใช้ fill แทนที่ทุก element ด้วย "done"
+
+Expected output:
+
+["HELLO", "WORLD", "JAVASCRIPT"]  // หลัง map
+["done", "done", "done"]          // หลัง fill
+
+-----------------------------------------------------------------------------------------------
